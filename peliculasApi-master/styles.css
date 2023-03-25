@@ -1,0 +1,154 @@
+/*Globales*/
+
+* {
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*Películas*/
+.contenedor {
+    width:100%;
+	max-width: 100%;
+	margin: 0 auto;
+    left: 250px;
+    padding: 40px;
+    background-color: #213944;
+    color: #fff;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    transition: all 0.3s ease;
+
+}
+
+.contenedor .pelicula {
+    width: 100%;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: 16px; 
+}
+
+.contenedor .poster {
+    width: 50%;
+	margin-bottom: 10px;
+	border-radius: 15px;
+
+}
+
+.contenedor .pelicula:hover {
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    transform: scale(1.2);
+    opacity: 50%;
+}
+
+/*sidebar*/
+
+.sidebar {
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    font-family: 'Almarai', sans-serif;
+    position: fixed;
+    background-color: #467c94;
+    float: left;
+    overflow:hidden;
+    transition: all 0.3ms ease;
+}
+
+.sidebar header {
+    font-size: 30px;
+    color: #fff;
+    text-align: left;
+    padding: 15px;
+    line-height: 70px;
+    background: #69bbdef2;
+    user-select: none;
+}
+
+.sidebar ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: 20px;
+    gap: 15px;
+}
+
+.sidebar ul li:hover {
+    background: #69bbde9b;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+
+}
+
+.sidebar ul li a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 20px;
+}
+    
+i:hover {
+    background: #69bbde9b;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+
+}
+
+#check {
+    display: none;
+}
+
+label #btn, label #cancel {
+    position: absolute;
+    cursor: pointer;
+}
+
+label #btn {
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: #fff;
+    transition: all 0.1s;
+}
+
+label #cancel {
+    z-index: 1111;
+    text-align: left;
+    left: -195px;
+    top: 17px;
+    font-size: 15px;
+    color: #fff;
+    transition: all 0.1s ease-in-out;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+}
+
+#check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+#check:checked ~ label #cancel {
+    left:195px;
+}
+
+.sidebar .active{
+    width: 250px;
+}
+
+.sidebar .active ~ .contenedor {
+    width: calc(100% - 250px);
+    left: 250px;
+}
