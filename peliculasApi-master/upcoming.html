@@ -13,31 +13,27 @@
     <title>upcoming</title>
 </head>
 <body>
-    <input type="checkbox" id="check">
-    <label for="check">
-        <i class="fa-sharp fa-solid fa-bars" id="btn"></i>
-        <i class="fas fa-times" id="cancel"></i>
-
-    </label>
-  
+    <div class="container">
+       
         <div class="sidebar">
-            <header>UCMovies</header>
-            <ul>
-                <li><a href="#">Populares</a></li>
-                <li><a href="#">Más Vistas Hoy</a></li>
-                <li><a href="#">Más Votadas</a></li>
-                <li><a href="#">Próximos Lanzamientos</a></li>
-            </ul>
-
-    <div class="contenedor" id="contenedor">
-        <img class="poster" src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}">
-    </div> 
+            <header>
+                <h1>UCMovies</h1>
+            </header>
+                <ul>
+                    <li><a href="#">Populares</a></li>
+                    <li><a href="#">Más Vistas Hoy</a></li>
+                    <li><a href="#">Más Votadas</a></li>
+                    <li><a href="#">Próximos Lanzamientos</a></li>
+                </ul>
+            
+        </div>
+        <div class="contenedor" id="contenedor">
+            <img class="poster" src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}">
+        </div>
+            
+    </div>
   
    <script src="./upcoming.js"></script>
-   <script>
-    let btn = document.querySelector ("#btn");
-    let sidebar = document.querySelector (".sidebar");
-</script>
    
 </body>
 </html>
