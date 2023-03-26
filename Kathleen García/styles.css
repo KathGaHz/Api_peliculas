@@ -1,0 +1,365 @@
+/* Globales*/
+.container {
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    box-sizing: border-box;
+    color: #ac2b78;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: center;
+    gap: 100px;
+    color: #ac2b78;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+
+.container .btn {
+    text-decoration: none;
+    padding-right: 0;
+    border: none;
+    background-color: #ac2b78;
+    color: antiquewhite;
+    border-radius: 30px;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+
+}
+
+.login-info .btn:hover {
+    background-color: #ac2b788d;
+}
+
+.title {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 40px;
+    letter-spacing: 10px;
+}
+
+.title.right {
+    text-align: right;
+}
+
+.container .btn a {
+    border: none;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.btn {
+    display: inline-block;
+    transform: none;
+    text-decoration: none;
+    border: none;
+    background-color: #ac2b78;
+    color: antiquewhite;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #ac2b788d;
+}
+
+.btn-1 {
+    display: flex;
+    text-decoration: none;
+    border: none;
+    background-color: #ac2b78;
+    color: antiquewhite;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+
+}
+
+.btn-1:hover {
+    background-color: #ac2b788d;
+    justify-content: center;
+    align-items: center;
+}
+    
+
+/* Header*/
+
+header {
+    justify-content: center;
+    background-image: url(./assets/header.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    padding: 30px;
+    height: 450px;
+    width: 96%;
+    margin: 0;
+    color:#ac2b78;
+}
+
+
+header h1 {
+    margin-top: 20px;
+    margin-bottom: 80px;
+    padding: 15px;
+    font-size: 70px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header p {
+    text-indent: 3em;
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 25px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+ul a {
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    color: #ac2b78;
+    gap: 20px;
+}
+
+
+
+/* Hero */
+
+.hero.container {
+    background-color: #ac2b782f;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero.container img {
+    width: 55%;
+}
+
+.hero.container .hero-texts {
+    padding: 60px 40px;
+    width: 40%;
+}
+
+.hero.container h2 {
+    letter-spacing: 10px;
+    text-align: justify;
+    justify-content: center;
+}
+
+.hero.container p {
+    font-size: 30px;
+    justify-content: center;
+    text-align: justify;
+}
+
+/* Cards */
+
+.cards.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.cards.container .card {
+    width: 30%;
+    justify-content:space-evenly;
+    padding: 10px;
+    margin-bottom: 5px;
+    object-fit: cover;
+    display: block;
+    text-align: center;
+}
+
+.cards.container h2 {
+    letter-spacing: 10px;
+    padding-top: 80px;
+    margin-bottom: 0;
+}
+
+
+.cards-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 70px;
+    gap: 5px;
+    width: 90%;
+    height: 100%;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    height: 30%;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0 0 3px 0;
+}
+
+.card:hover {
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    background-color: #ac2b783b;
+    box-shadow: 3px 3px 6px 0 #ac2b78;
+}
+
+
+.card img {
+    border-radius: 30px;
+    padding: 5px;
+    border-style: groove;
+    border-color: #ac2b78;
+    width: 70%;
+    height: 60%;
+}
+
+.cards.container .last-btn {
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer */
+
+footer {
+    height: 100%;
+    padding: 0 60px 60px 60px ;
+    background-color:#ac2b789f;
+    color: #fff;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.input {
+    background: #fff;
+    border: 0;
+    color:#ac2b78;
+    outline: none;
+    border: 1px solid #ac2b78;
+    padding: 20px 10px;
+}
+
+input::placeholder {
+    color:#ac2b78;
+}
+
+input[type="text"], input[type="email"] {
+    display: inline-block;
+    border-radius: 50px;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.form textarea {
+    color: #ac2b78;
+    border-radius: 30px;
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+.form .input[type="submit"] {
+    border-radius: 50px;
+    width: 20%;
+    height: 30%;
+    text-align: center;
+}
+
+.form .input[type="submit"]:hover {
+    background-color: #ac2b788d;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+/* Responsive */
+
+@media (min-width: 240px) and (max-width: 880px) {
+    
+    header h1 {
+        text-align: center;
+        font-size: 60px;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+
+    .title.right {
+        text-align: center;
+    }
+
+    .hero.container {
+        flex-direction:column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero.container img {
+        width: 100%;
+    }
+
+    .hero.container .hero-texts {
+        width: 100%;
+    }
+
+    .cards.container .card {
+        width: 90%;
+    }
+
+    footer .form {
+        grid-template-columns: 1fr;
+    }
+    
+    footer {
+        display: block;
+    }
+
+
+
+    
+
+}
+
+
+
+    
+    
+
+
